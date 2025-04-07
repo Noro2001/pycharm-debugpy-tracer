@@ -15,13 +15,13 @@
 
     <extensions defaultExtensionNs="com.intellij">
 
-        <!-- Основной интерфейс плагина -->
+       
         <toolWindow id="DebugPy"
                     anchor="bottom"
                     factoryClass="com.example.debugpyplugin.DebugPyToolWindowFactory"
                     canCloseContents="false" />
 
-        <!-- Новый ToolWindow для DAP Viewer -->
+        
         <toolWindow id="DAP Viewer"
                     anchor="bottom"
                     factoryClass="com.example.debugpyplugin.DAPViewerToolWindowFactory"
