@@ -1,0 +1,4 @@
+functions_to_trace:
+  - my_function
+  - another_function
+  - your_function
