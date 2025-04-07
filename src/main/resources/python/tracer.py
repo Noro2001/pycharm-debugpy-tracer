@@ -5,7 +5,7 @@ import os
 import yaml
 import io
 
-# ✅ Установка UTF-8 вывода независимо от ОС (important for Windows)
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', write_through=True)
 
 _traced = {}
@@ -61,7 +61,7 @@ def get_stats():
     for func, total in _traced.items():
         print(f"🕒 {func}: {total:.6f}s")
 
-# ✅ stdin command listener (for IPC)
+
 def listen_for_commands():
     print("🟢 Tracer ready. Waiting for stdin commands...", flush=True)
     for line in sys.stdin:
@@ -77,7 +77,7 @@ def listen_for_commands():
         else:
             print(f"⚠\ufe0f Unknown command: {cmd}", flush=True)
 
-# 🔁 Watcher for config.yaml changes
+
 def start_config_watcher(path="config.yaml"):
     def watch():
         global _last_mtime
@@ -91,7 +91,7 @@ def start_config_watcher(path="config.yaml"):
                     print("🔄 config.yaml changed. Reloading...", flush=True)
                     funcs = load_functions_from_config()
                     update_traced_functions(funcs)
-            time.sleep(2)  # check every 2 seconds
+            time.sleep(2)  
 
     thread = threading.Thread(target=watch, daemon=True)
     thread.start()
